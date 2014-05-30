@@ -1,0 +1,18 @@
+
+<div class="jumbotron">
+	<div class="row">
+		<% if !signed_in? %>
+			<div class="col-md-6">
+				<h1>Sup dawg.</h1>
+			</div>
+			<p>This is a simple question generator site.</p>
+	  	
+	  		<p><a href = <%= signup_path %> class="btn btn-primary btn-lg" role="button">Sign up</a></p>
+  		<% else %>
+  			<div class="col-md-6">
+  				<p> What is your favorite food? </p>
+  			</div>
+  			<p><a href = '#' class="btn btn-primary btn-lg" role="button">Answer it now</a></p>
+  		<% end %> 
+  	</div>
+</div>
